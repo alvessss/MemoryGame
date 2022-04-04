@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_score_and_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:ignore="UselessParent"
+        android:layout_alignStart="@id/squares"
+        android:layout_marginStart="5dp">
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="level: 1"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText"/>
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/level"
+            android:text="score: 0"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText"/>
+        <TextView
+            android:id="@+id/max_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score"
+            android:text="max score: 0"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/squares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header_score_and_level">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_1"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_2"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_below="@id/square_1"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_4"
+            android:layout_below="@id/square_2"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_5"
+            android:layout_below="@id/square_2"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_below="@id/square_4"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_7"
+            android:layout_below="@id/square_5"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_8"
+            android:layout_below="@id/square_6"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_below="@id/square_7"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_7"
+            android:layout_below="@id/square_8"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/square_12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/square_default_color"
+            android:layout_toEndOf="@id/square_8"
+            android:layout_below="@id/square_9"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/square_default_color"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/start_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:layout_below="@id/squares"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/square_hint_color"/>
+
+</RelativeLayout>
