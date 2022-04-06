@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.alvessss.examples.Game.MemoryGame;
+import com.alvessss.examples.Game.Game;
 
 @SuppressWarnings("all")
 public class MainActivity extends AppCompatActivity {
-   private MemoryGame memoryGame;
+   private Game memoryGame;
 
    @Override
    protected void onCreate(Bundle savedInstanceState){
@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
    @Override
    protected void onStart(){
       super.onStart();
-      memoryGame = new MemoryGame(this);
+      memoryGame = new Game(this);
    }
 }

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
     <RelativeLayout
         android:id="@+id/header_score_and_level"
@@ -20,24 +21,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="level: 1"
-            android:textSize="16sp"
-            tools:ignore="HardcodedText"/>
+            android:textSize="16sp" />
         <TextView
             android:id="@+id/score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/level"
             android:text="score: 0"
-            android:textSize="16sp"
-            tools:ignore="HardcodedText"/>
+            android:textSize="16sp" />
         <TextView
             android:id="@+id/max_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/score"
             android:text="max score: 0"
-            android:textSize="16sp"
-            tools:ignore="HardcodedText" />
+            android:textSize="16sp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -53,7 +51,15 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A1"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_2"
             android:layout_width="100dp"
@@ -61,7 +67,15 @@
             android:background="@color/square_default_color"
             android:layout_toEndOf="@id/square_1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A2"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_3"
             android:layout_width="100dp"
@@ -69,7 +83,15 @@
             android:background="@color/square_default_color"
             android:layout_toEndOf="@id/square_2"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A3"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView
@@ -79,7 +101,15 @@
             android:background="@color/square_default_color"
             android:layout_below="@id/square_1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B1"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_5"
             android:layout_width="100dp"
@@ -88,7 +118,15 @@
             android:layout_toEndOf="@id/square_4"
             android:layout_below="@id/square_2"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B2"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_6"
             android:layout_width="100dp"
@@ -97,7 +135,15 @@
             android:layout_toEndOf="@id/square_5"
             android:layout_below="@id/square_2"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B3"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView
@@ -107,7 +153,15 @@
             android:background="@color/square_default_color"
             android:layout_below="@id/square_4"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C1"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_8"
             android:layout_width="100dp"
@@ -116,7 +170,15 @@
             android:layout_toEndOf="@id/square_7"
             android:layout_below="@id/square_5"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C2"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_9"
             android:layout_width="100dp"
@@ -125,7 +187,15 @@
             android:layout_toEndOf="@id/square_8"
             android:layout_below="@id/square_6"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C3"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView
@@ -135,7 +205,15 @@
             android:background="@color/square_default_color"
             android:layout_below="@id/square_7"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D1"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_11"
             android:layout_width="100dp"
@@ -144,7 +222,15 @@
             android:layout_toEndOf="@id/square_7"
             android:layout_below="@id/square_8"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D2"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/square_12"
             android:layout_width="100dp"
@@ -153,7 +239,15 @@
             android:layout_toEndOf="@id/square_8"
             android:layout_below="@id/square_9"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/square_default_color"/>
+            app:cardBackgroundColor="@color/square_default_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D3"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
     <Button

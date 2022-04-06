@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 @SuppressWarnings("all")
-public class MemoryGame {
+public class Game {
    private final int SEQUENCY_BOUND = 12;
    private final int START_SEQUENCY_SIZE = 3;
 
@@ -41,7 +41,7 @@ public class MemoryGame {
       gameScreen.enableOnClickListeners();
    };
 
-   public MemoryGame(Activity activity) {
+   public Game(Activity activity) {
       startGame = activity.findViewById(R.id.start_game);
       gameLevel = new Level(activity);
       gameScreen = new Screen(activity);

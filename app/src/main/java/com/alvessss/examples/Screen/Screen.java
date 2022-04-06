@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.view.View;
 
-import com.alvessss.examples.Game.MemoryGame;
+import com.alvessss.examples.Game.Game;
 import com.alvessss.examples.R;
 
 @SuppressWarnings("all")
@@ -22,9 +22,9 @@ public class Screen {
 
    private boolean showedSequence = false;
 
-   private MemoryGame.Callback onClickOnRightSquare;
-   private MemoryGame.Callback onClickOnWrongSquare;
-   private MemoryGame.Callback onSequenceDone;
+   private Game.Callback onClickOnRightSquare;
+   private Game.Callback onClickOnWrongSquare;
+   private Game.Callback onSequenceDone;
 
    public Screen(Activity activity) {
       final int[] ID = {
@@ -68,15 +68,15 @@ public class Screen {
       return this.showedSequence;
    }
 
-   public void setOnClickOnRightSquare(MemoryGame.Callback callback) {
+   public void setOnClickOnRightSquare(Game.Callback callback) {
       this.onClickOnRightSquare = callback;
    }
 
-   public void setOnClickOnWrongSquare(MemoryGame.Callback callback) {
+   public void setOnClickOnWrongSquare(Game.Callback callback) {
       this.onClickOnWrongSquare = callback;
    }
 
-   public void setOnSequenceDone(MemoryGame.Callback callback) {
+   public void setOnSequenceDone(Game.Callback callback) {
       this.onSequenceDone = callback;
    }
 
